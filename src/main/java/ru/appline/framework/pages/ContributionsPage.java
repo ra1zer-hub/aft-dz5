@@ -14,31 +14,31 @@ public class ContributionsPage extends BasePage {
 
 
     @FindBy(xpath = "//label[@class='calculator__currency-field']")
-    List<WebElement> listCurrency;
+    private List<WebElement> listCurrency;
 
     @FindBy(xpath = "//input[@name='amount']")
-    WebElement depositAmount;
+    private WebElement depositAmount;
 
     @FindBy(id = "period")
-    WebElement period;
+    private WebElement period;
 
     @FindBy(name = "replenish")
-    WebElement monthlyReplenish;
+    private WebElement monthlyReplenish;
 
     @FindBy(xpath = "//form//label[@class='calculator__check-block']")
-    List<WebElement> additionalOptions;
+    private List<WebElement> additionalOptions;
 
     @FindBy(xpath = "//span[@class='js-calc-earned']")
-    WebElement accrued;
+    private WebElement accrued;
 
     @FindBy(xpath = "//span[@class='js-calc-period']")
-    List<WebElement> replenishForThePeriod;
+    private List<WebElement> replenishForThePeriod;
 
     @FindBy(xpath = "//span[@class='js-calc-replenish']")
-    WebElement totalAmountOfReplenishment;
+    private WebElement totalAmountOfReplenishment;
 
     @FindBy(xpath = "//span[@class='js-calc-result']")
-    WebElement withdrawalAmount;
+    private WebElement withdrawalAmount;
 
     @Step("Выбираем валюту '{currencyName}'")
     public ContributionsPage selectCurrency(String currencyName) {

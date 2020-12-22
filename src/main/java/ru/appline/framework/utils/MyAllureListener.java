@@ -16,7 +16,6 @@ public class MyAllureListener implements TestWatcher {
 
     @Override
     public void testFailed(ExtensionContext context, Throwable cause) {
-        if (context.getExecutionException().isPresent())
             addScreenshot();
     }
 }

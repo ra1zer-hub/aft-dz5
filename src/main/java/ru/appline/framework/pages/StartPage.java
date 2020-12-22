@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class StartPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='service']")
-    List<WebElement> services;
+    private List<WebElement> services;
 
     @FindBy(xpath = "//h1")
-    WebElement nextPageTitle;
+    private WebElement nextPageTitle;
 
     @Step("Переходим на страницу '{menuName}'")
     public ContributionsPage selectMenu(String menuName) {
